@@ -66,3 +66,6 @@ after migrating if u wish to view the sql  code type the above code
 
 
 #10
+
+
+git remote add orgin git@github.com:zerihun-techin/DjangoTechin.git
