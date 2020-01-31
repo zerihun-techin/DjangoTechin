@@ -1,0 +1,71 @@
+#1 pip install virtualenv
+
+this command is for installing virtual enviroment
+
+
+
+#2 virtualenv env -> env can be named anything
+
+naming your virtual enviroment
+
+   
+
+#3 \path\to\env\Scripts\activate
+
+or you can just activae it manually
+
+activating the virtual enviroment
+
+
+
+
+#4 pip install django 
+
+then installing django to your virtual enviroment
+
+#5 django-admin startproject mysite
+
+start your project in django 
+p.s mysite can be named anything you like but it would be better if it took the name of the project
+
+#6 pip freeze > requirements.txt.
+
+this command allows you to put your requirments in the requirements.txt if you want commit the project on github and in case you want to run your project on other pc 
+
+and if your installing someones project in your pc use this command
+
+pip install -r requirements.txt
+
+
+
+
+#7 python manage.py startapp polls
+
+As We talked about django is divides its project into apps
+
+
+
+Projects vs. apps
+
+What’s the difference between a project and an app? An app is a Web application that does something – e.g., 
+a Weblog system, a database of public records or a small poll app.
+ A project is a collection of configuration and apps for a particular website.
+ A project can contain multiple apps. An app can be in multiple projects.
+
+
+#8 py manage.py runserver
+
+this command enables us to start the server 
+
+
+#9 py manage.py sqlmigrate polls 0001
+
+what is migrating 
+
+after migrating if u wish to view the sql  code type the above code 
+
+
+#10
+
+
+git remote add orgin git@github.com:zerihun-techin/DjangoTechin.git
