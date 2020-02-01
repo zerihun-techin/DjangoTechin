@@ -8,4 +8,4 @@ def index(request):
     return HttpResponse("<h1>አለም ሰላም</h1>")
 
 def getup(request):
-    return HttpResponse("<H4> hello worl</H4>")
+    return HttpResponse("<H4> hello world</H4>")
