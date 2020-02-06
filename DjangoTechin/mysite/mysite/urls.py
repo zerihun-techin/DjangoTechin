@@ -21,9 +21,21 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path
+from train import views
+from store.views import *
+from books.views import *
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
+    path('', include('polls.urls')),
+    path('books2/',books,name= 'hello') ,
+    path('store/', store ,name = 'shop'),
     path('admin/', admin.site.urls),
+    # path('store/',include('store.urls')),
+    path('index/',views.index,name='index'),
+    path('index/news/',views.news,name='news'),
+    path('index/news/event',views.event,name='event')
+    
+
+    
 ]
 

@@ -8,7 +8,7 @@ this command is for installing virtual enviroment
 
 naming your virtual enviroment
 
-
+   
 
 #3 \path\to\env\Scripts\activate
 
@@ -58,7 +58,12 @@ a Weblog system, a database of public records or a small poll app.
 this command enables us to start the server 
 
 
-#9 py manage.py sqlmigrate polls 0001
+#9 
+1st py manage.py migrate
+2nd py manage.py makemigarions
+
+
+py manage.py sqlmigrate polls 0001
 
 what is migrating 
 
