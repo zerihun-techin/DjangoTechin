@@ -54,15 +54,24 @@
           </form>
         </div>
       </nav>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
+    <div class="container">
+        <div class="row">
+   {% for kena in news  %}
+   
+     <div class="card" style="width: 18rem;">
+       <div class="card-body">
+      <h5 class="card-title">{{kena.title}}</h5>
+
+      <p class="card-text">{{kena.description}}</p>
+      <a href="#" class="card-link">{{kena.date}}</a>
+      
+    </div>
+     </div>
+   {% endfor %}
+
+   </div></div>
+      
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

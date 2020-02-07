@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'polls',
     'events',
     'store',
+    'books'
     
     
 ]
