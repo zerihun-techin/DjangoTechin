@@ -26,7 +26,10 @@ from store.views import *
 from books.views import *
 
 urlpatterns = [
-    path('', include('polls.urls')),
+    path('grappelli/', include('grappelli.urls')), 
+
+      # Django JET URLS
+   
     path('books2/',books,name= 'hello') ,
     path('store/', store ,name = 'shop'),
     path('admin/', admin.site.urls),
